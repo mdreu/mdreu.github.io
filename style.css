@@ -5,12 +5,16 @@
     --bg-color: #171717;
     --word-color: white;
     --accent-color: #B2AC88;
-    --gradient: radial-gradient(circle,#333333, var(--bg-color));
+    --footer-color: #b2ac8865;
+    --other-grad: #333333;
+    --special-bg: transparent;
+    --gradient: radial-gradient(circle,var(--other-grad), var(--bg-color));
     font-family: 'Open Sans', sans-serif;
 }
 body {
     background: var(--gradient);
     overflow-x: hidden;
+    margin: 0;
 }
 /* nav h1 {
     
@@ -38,23 +42,25 @@ legend {
 }
 legend:before {
     position: absolute;
-    left: 0px;
-    content: '';
+    left: -29px;
+    content: 'About Me';
     height: 100%;
     width: 100%;
-    z-index: -1;
-    background-color: var(--accent-color);
-    color: transparent;
+    z-index: 1;
+    background-color: transparent;
+    color: var(--accent-color);
     transform-origin: bottom;
     transform: translate(-197px);
     transition: 1s;
 }
 fieldset:hover legend:before {
-    transform: translate(0px);
+    transform: translate(30px);
 }
 #words {
     color: var(--word-color);
     text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 #words legend {
     text-align: left;
@@ -107,8 +113,8 @@ nav a:before {
     opacity: 0;
     transform:scaleY(2);
     transition: .5s;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+    border-top: 2px solid var(--word-color);
+    border-bottom: 2px solid var(--word-color);
 }
 nav ul {
     margin: 0;
@@ -169,6 +175,10 @@ a:hover {
     #words legend {
         text-align: center;
     }
+    #words {
+        padding-bottom: 500px;
+    }
+    
 
 }
 .specialName {
@@ -189,10 +199,10 @@ a:hover {
     text-transform: uppercase;
 }
 .specialName h1:nth-child(2) {
-    color: white;
+    color: var(--word-color);
     transition: .5s;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0% 100%);
-    background: #212121;
+    background: var(--special-bg);
 }
 .specialName h1:nth-child(2):hover {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -200,7 +210,7 @@ a:hover {
 .specialName h1:nth-child(1):hover ~ h1 {
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
-.container {
+.bg {
     position: absolute;
     overflow: hidden;
     height: 100%;
@@ -299,4 +309,76 @@ a:hover {
     100% {
         bottom: -100px;
     }
+}
+.container {
+    top: 200px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 25px;
+}
+.card {
+    
+    height: 350px;
+    width: 300px;
+
+    background: var(--accent-color);
+}
+.card h1 {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    bottom: 15px;
+}
+.card a {
+    position: absolute;
+    color: transparent; 
+    text-align: center;
+    left: 110px;
+    text-decoration: none;
+}
+.card:hover a {
+    position: relative;
+    color: white;
+    border: white solid 1px;
+    padding: 5px;
+   
+}
+.card:hover img {
+    height: 0px;
+}
+.card h2 {
+    position: absolute;
+    color: transparent;
+    font-size: 15px;
+    text-align: center;
+}
+.card:hover h2 {
+    position: relative;
+    color: white;
+}
+button {
+    position: relative;
+    font-size: 20px;
+    top: 110px;
+}
+
+#dayMode:before {
+    content: "Night Mode";
+    position: absolute;
+    color: transparent;
+} 
+#dayButton {
+    position: relative;
+    top: 10px;
+    
+}
+#footer {
+    position: absolute;
+    background: var(--footer-color);
+    width: 100%;
+    height: 15%;
+    bottom: 0;
+  
 }

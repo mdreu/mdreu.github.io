@@ -152,6 +152,7 @@ a:hover {
     .specialName h1 {
         color: transparent;
         background: transparent;
+        bottom: 500px;
         
     }
 

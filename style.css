@@ -173,6 +173,9 @@ a:hover {
         bottom: 500px;
         
     }
+    #form {
+        left: 10000px;
+    }
 
 }
 @media screen and (max-width: 457px) {

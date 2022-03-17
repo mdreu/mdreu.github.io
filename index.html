@@ -44,7 +44,7 @@
     
     <div id="words">
 
-        <fieldset><legend>About Me</legend> <span>I'm an aspiring web developer ready to learn from professionals in the industry. Bootcamp trained in HTML, CSS, bootstrap, Javascript, react, and python plus previous knowledge of C++ and data structures. I also have experience in photoshop, Wordpress, and Wix. If I don't already know how to use the software or program with the code you need I will research it right away so that I can tackle any assignment that you may have for me.</span></fieldset>
+        <fieldset id="fieldset"><legend>About Me</legend> <span>I'm an aspiring web developer ready to learn from professionals in the industry. Bootcamp trained in HTML, CSS, bootstrap, Javascript, react, and python plus previous knowledge of C++ and data structures. I also have experience in photoshop, Wordpress, and Wix. If I don't already know how to use the software or program with the code you need I will research it right away so that I can tackle any assignment that you may have for me.</span></fieldset>
     </div>
     <!-- <div class="container">
         <div class="card">
@@ -67,6 +67,32 @@
     <!-- <div id="footer">
         <button onclick="dayMode()" id="dayButton"><span id="dayMode">Day Mode</span></button>
     </div> -->
+    <div id="form">
+    
+            <form id="customize">
+                <label for="background">Background and First Gradient:</label>
+                <br>
+            <input type="text" id="bg" name="background">
+            <br>
+                <label for="Gradient">Second Gradient:</label>
+                <br>
+            <input type="text" id="Gradient" name="Gradient">
+            <br>
+                <label for="wordColor">Word Color:</label>
+                <br>
+            <input type="text" id="wc" name="wordColor">
+            <br>
+                <label for="shapeColor">Shape Color:</label>
+                <br>
+            <input type="text" id="sh" name="shapeColor">
+            <br>
+                <label for="AccentColor">Accent Color:</label>
+                <br>
+            <input type="text" id="ac" name="AccentColor">
+            <br>
+            <button type="button" onclick="changeColors()">Hello</button>
+            </form>
+    </div>
     <script src="script.js"></script>
     
 </body>

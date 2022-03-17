@@ -8,6 +8,7 @@
     --footer-color: #b2ac8865;
     --other-grad: #333333;
     --special-bg: transparent;
+    --shape-color: #b2ac8863;
     --gradient: radial-gradient(circle,var(--other-grad), var(--bg-color));
     font-family: 'Open Sans', sans-serif;
 }
@@ -30,7 +31,7 @@ nav h1:before {
 nav h1:hover:before {
     color: var(--accent-color);
 } */
-fieldset {
+#fieldset {
     position: relative;
     top: 100px;
     padding: 50px;
@@ -40,7 +41,7 @@ legend {
     overflow: hidden;
     position: relative;
 }
-legend:before {
+/* legend:before {
     position: absolute;
     left: -29px;
     content: 'About Me';
@@ -52,9 +53,19 @@ legend:before {
     transform-origin: bottom;
     transform: translate(-197px);
     transition: 1s;
-}
-fieldset:hover legend:before {
-    transform: translate(30px);
+}*/
+#fieldset:hover legend:before {
+    width: 100%;
+} 
+legend:before {
+    content: "About Me";
+    position: absolute;
+    top: 0;
+    left: -29;
+    color: var(--accent-color);
+    width: 0%;
+    overflow: hidden;
+    transition: all .5s;
 }
 #words {
     color: var(--word-color);
@@ -226,7 +237,7 @@ a:hover {
 .shape {
     position: absolute;
     bottom: -100px;
-    background: #b2ac8863;
+    background: var(--shape-color);
     animation: shapes 10s infinite ease-in-out;
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
 }
@@ -358,7 +369,7 @@ a:hover {
     position: relative;
     color: white;
 }
-button {
+#button {
     position: relative;
     font-size: 20px;
     top: 110px;
@@ -381,4 +392,15 @@ button {
     height: 15%;
     bottom: 0;
   
+}
+#form {
+    position: absolute;
+    top: 500px;
+    right: 1%;
+    border: var(--word-color) solid 1px;
+    padding: 20px;
+    
+}
+#customize {
+    color: var(--word-color);
 }

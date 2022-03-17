@@ -22,7 +22,6 @@
         <div class="filler">Filler</div>
         
     </div>
-
     <nav>
         <h1 id="mobileTitle">Matthew Dreusicke</h1>
         <div class="specialName" onclick="dayMode()">
@@ -41,7 +40,27 @@
             </li>
         </ul>
     </nav>
-
+    <br>
+    <br>
+    <div>
+        <fieldset id="fieldset">
+            <form id="customize">
+                <label for="background">Background and First Gradient:</label>
+            <input type="text" id="bg" name="background">
+            <br>
+                <label for="Gradient">Second Gradient:</label>
+            <input type="text" id="Gradient" name="Gradient">
+            <br>
+                <label for="wordColor">Word Color:</label>
+            <input type="text" id="wc" name="wordColor">
+            <br>
+                <label for="shapeColor">Shape Color:</label>
+            <input type="text" id="sh" name="shapeColor">
+            <button type="button" onclick="changeColors()">Hello</button>
+            </form>
+        </fieldset>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>

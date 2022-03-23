@@ -137,11 +137,11 @@ nav ul {
 nav ul li {
     list-style: none;
 }
-a:hover:before {
+nav a:hover:before {
     transform: scaleY(1.2);
     opacity: 1;
 }
-a:after {
+nav a:after {
     content: "";
     position: absolute;
     top: 2px;
@@ -153,10 +153,10 @@ a:after {
     transform: scale(0);
     z-index: -1;
 }
-a:hover:after {
+nav a:hover:after {
     transform: scale(1);
 }
-a:hover {
+nav a:hover {
     color: var(--word-color);
 }
 @media screen and (max-width: 693px) {
@@ -406,4 +406,13 @@ a:hover {
 }
 #customize {
     color: var(--word-color);
+}
+#portfolio-list {
+    position: relative;
+    top: 50px;
+    
+}
+#portfolio-list a {
+    text-decoration: none;
+    color: white;
 }

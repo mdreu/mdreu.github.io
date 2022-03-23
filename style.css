@@ -206,6 +206,9 @@ nav a:hover {
     #words legend {
         text-align: center;
     }
+    #Contact legend {
+        text-align: center;
+    }
     /* #words {
         padding-bottom: 500px;
     } */
@@ -477,6 +480,7 @@ nav a:hover {
     transition: all .5s;
 }
 #Contact {
+    position: relative;
     color: var(--word-color);
     margin-left: 10px;
     margin-right: 10px;
@@ -517,4 +521,15 @@ nav a:hover {
 }
 #sites a:hover {
     background-color: var(--accent-color);
+}
+#socials {
+    display: flex;
+    position: relative;
+    top: 120px;
+    justify-content: space-evenly;
+}
+#socials a {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-size: 50px;
 }

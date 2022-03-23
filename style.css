@@ -535,6 +535,7 @@ nav a:hover {
 }
 form button {
     margin-top: 4px;
+    font-size: 17px;
     background-color: transparent;
     color: var(--word-color);
     border: var(--word-color) solid;

@@ -174,11 +174,27 @@ nav a:hover {
         bottom: 500px;
         
     }
-    #form {
-        left: 10000px;
-    }
+   #inter {
+       align-content: center;
+       flex-direction: column;
+   }
 
 }
+/* @media screen and (max-width: 504px) {
+    #inter {
+       
+        position: absolute;
+    }
+    #sites {
+        padding: 5px;
+    }
+    #form {
+        padding: 5px;
+    }
+} */
+    
+
+    
 @media screen and (max-width: 457px) {
     nav ul {
         text-align: center;
@@ -190,9 +206,9 @@ nav a:hover {
     #words legend {
         text-align: center;
     }
-    #words {
+    /* #words {
         padding-bottom: 500px;
-    }
+    } */
     
 
 }
@@ -397,14 +413,14 @@ nav a:hover {
     bottom: 0;
   
 }
-#form {
+/* #form {
     position: absolute;
     top: 500px;
     right: 1%;
     border: var(--word-color) solid 1px;
     padding: 20px;
     
-}
+} */
 #customize {
     color: var(--word-color);
 }
@@ -468,4 +484,37 @@ nav a:hover {
 #Contact legend {
     text-align: left;
     font-size: 50px;
+}
+#check  > h1{
+    top: 90px;
+    position: relative;
+    padding-left: 10px;
+}
+#form {
+    position: relative;
+    
+    border: var(--word-color) solid 1px;
+    padding: 20px;
+    
+}
+#inter {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 80px;
+}
+#sites {
+    position: relative;
+    border: var(--word-color) solid 1px;
+    padding: 20px;
+    text-align: center;
+}
+#sites a {
+    text-decoration: none;
+    color: var(--word-color);
+    border: var(--word-color) solid;
+    padding: 2px;
+}
+#sites a:hover {
+    background-color: var(--accent-color);
 }

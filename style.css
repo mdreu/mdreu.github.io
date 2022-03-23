@@ -533,3 +533,12 @@ nav a:hover {
     color: var(--accent-color);
     font-size: 50px;
 }
+form button {
+    margin-top: 4px;
+    background-color: transparent;
+    color: var(--word-color);
+    border: var(--word-color) solid;
+}
+form button:hover {
+    background-color: var(--accent-color);
+}

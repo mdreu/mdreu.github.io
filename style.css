@@ -16,6 +16,7 @@ body {
     background: var(--gradient);
     overflow-x: hidden;
     margin: 0;
+    color: var(--word-color);
 }
 /* nav h1 {
     
@@ -37,7 +38,7 @@ nav h1:hover:before {
     padding: 50px;
     
 }
-legend {
+#fieldset legend {
     overflow: hidden;
     position: relative;
 }
@@ -57,7 +58,7 @@ legend {
 #fieldset:hover legend:before {
     width: 100%;
 } 
-legend:before {
+#fieldset legend:before {
     content: "About Me";
     position: absolute;
     top: 0;
@@ -410,9 +411,61 @@ nav a:hover {
 #portfolio-list {
     position: relative;
     top: 50px;
-    
+    list-style: none;
 }
 #portfolio-list a {
     text-decoration: none;
     color: white;
+    
+}
+#portfolio-list a:hover {
+    background-color: var(--accent-color);
+    padding: 5px;
+}
+
+
+#contactMe {
+    position: relative;
+    top: 100px;
+    padding: 50px;
+    
+}
+#contactMe legend {
+    overflow: hidden;
+    position: relative;
+}
+/* legend:before {
+    position: absolute;
+    left: -29px;
+    content: 'About Me';
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: transparent;
+    color: var(--accent-color);
+    transform-origin: bottom;
+    transform: translate(-197px);
+    transition: 1s;
+}*/
+#contactMe:hover legend:before {
+    width: 100%;
+} 
+#contactMe legend:before {
+    content: "Contact Me";
+    position: absolute;
+    top: 0;
+    left: -29;
+    color: var(--accent-color);
+    width: 0%;
+    overflow: hidden;
+    transition: all .5s;
+}
+#Contact {
+    color: var(--word-color);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#Contact legend {
+    text-align: left;
+    font-size: 50px;
 }

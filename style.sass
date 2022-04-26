@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,159;0,200;0,238;0,300;0,400;0,497;0,500;0,600;0,700;0,727;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+$accent: rgb(32, 155, 114)
+
+:root 
+    font-family: 'Raleway', sans-serif
+body 
+    background: url(images/profileBg.png) rgb(247, 247, 242)
+    background-position: center
+    background-size: cover
+    background-attachment: fixed
+    
+    
+nav
+    width: 100%
+    position: relative
+    display: flex
+    justify-content: space-evenly
+    box-shadow: 0 4px 6px -6px #222
+    color: $accent
+    font-size: 35px
+    margin-bottom: 20px 
+    background: white
+#present
+    display: flex
+    justify-content: space-evenly
+    hr
+        border: solid $accent 1px
+    div:first-child
+        width: 500px
+        height: 600px
+        position: relative
+        background: url(images/MDD.jpg)
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        margin: 15px
+        border-radius: 11px
+    div:nth-child(2)
+        width: 800px
+        margin: 25px
+        font-size: 25px
+        background: white
+        box-shadow: 0 4px 6px -6px #222
+        padding: 10px
+        h3
+            padding: 10px
+
+    span
+        color: $accent    
+#languages
+    margin: 15px
+
+#myLang
+    display: flex
+    justify-content: space-evenly
+    background: white
+    box-shadow: 0 4px 6px -6px #222
+
+.langTile 
+    background: url(languages/html.png)
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    width: 250px
+    height: 250px
+    margin: 15px
+    border-radius: 11px
+    &:hover
+        transform: skewy(2deg)
+        background-color: rgb(233, 233, 233)
+        transition: ease-in 500ms
+.langTile2
+    background: url(languages/css.png)
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    width: 250px
+    height: 250px
+    margin: 15px
+    border-radius: 11px
+    &:hover
+        transform: skewy(2deg)
+        background-color: rgb(233, 233, 233)
+        transition: ease-in 500ms
+.langTile3
+    background: url(languages/jscript.png)
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    width: 250px
+    height: 250px
+    margin: 15px
+    border-radius: 11px
+    &:hover
+        transform: skewy(2deg)
+        background-color: rgb(233, 233, 233)
+        transition: ease-in 500ms
+.langTile4
+    background: url(languages/Python.png)
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    width: 250px
+    height: 250px
+    margin: 15px
+    border-radius: 11px
+    &:hover
+        transform: skewy(2deg)
+        background-color: rgb(233, 233, 233)
+        transition: ease-in 500ms
+.langTile5
+    background: url(languages/c++.png)
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    width: 250px
+    height: 250px
+    margin: 15px
+    border-radius: 11px
+    &:hover
+        transform: skewy(2deg)
+        background-color: rgb(233, 233, 233)
+        transition: ease-in 500ms
+#projects
+    margin: 15px
+
+#myProj
+    display: flex
+    justify-content: space-evenly
+#projCol
+    display: flex
+    flex-direction: column
+.projTile 
+    background-color: rgb(211, 206, 206)
+    width: 450px
+    height: 250px
+    margin: 15px
+    border-radius: 11px
+    &:hover
+        transform: skewy(2deg)
+        background-color: rgb(233, 233, 233)
+        transition: ease-in 500ms
+    div
+        margin: 20px
+        text-align: center
+    button
+        background: $accent
+        border: none
+        border-radius: 10px
+        margin: 15px
+        font-size: 25px
+        padding: 1px
+button
+    background: $accent
+    border: none
+    border-radius: 10px
+    margin: 15px
+    font-size: 25px
+    padding: 20px
+
+#footer
+    display: flex
+    box-shadow: 0 4px 6px -6px #222
+    background-color: white
+    
+
+#footer ul li:first-child 
+    font-weight: bold
+
+#footer ul
+    margin-right: 70px
+
+#footer a 
+    text-decoration: none
+
+#footer ul, #end ul 
+    list-style: none
